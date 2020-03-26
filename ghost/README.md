@@ -4,9 +4,9 @@ The web application will be containerised by Docker, be composed by `docker-comp
 
 ## Pre-work
 
-1. Set DNS type A record pointing to your cloud machine public IP for your domain.
+1. In your domain service provider, set DNS type A record pointing to the public IP of your cloud machine for your chosen domain.
 
-2. Add inbound ports 80 (HTTP) and 443 (HTTPS) to the security group of your cloud machine.
+2. In your cloud service provider, add inbound ports 80 (HTTP) and 443 (HTTPS) to the security group of your cloud machine.
 
 ## Install Docker Engine - Community (on Ubuntu)
 
