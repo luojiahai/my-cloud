@@ -11,7 +11,7 @@ services:
       - database__client=mysql
       - database__connection__host=db
       - database__connection__user=ghostdb
-      - database__connection__password=${DB_PASSWORD}
+      - database__connection__password=${MYSQL_PASSWORD}
       - database__connection__database=ghostdb
       - VIRTUAL_HOST=${VIRTUAL_HOST}
       - DEFAULT_HOST=${DEFAULT_HOST}
