@@ -2,6 +2,12 @@
 
 The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (`mariadb`, `nginx-proxy`, `letsencrypt`) and be ready to serve on a cloud machine.
 
+## Pre-work
+
+1. Set Type A DNS pointing to your cloud machine public IP for your domain.
+
+2. Add inbound ports 80 (HTTP) and 443 (HTTPS) to the security group of your cloud machine.
+
 ## Install Docker Engine - Community (on Ubuntu)
 
 1. Update the `apt` package index:
