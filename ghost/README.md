@@ -1,5 +1,7 @@
 # Ghost
 
+The web application will be containerised by Docker, be composed by ```docker-compose``` associating with other essential services (mariadb, nginx-proxy, letsencrypt) and be ready to serve on a cloud machine.
+
 ## Install Docker Engine - Community (on Ubuntu)
 
 1. Update the ```apt``` package index:
