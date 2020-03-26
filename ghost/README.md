@@ -57,12 +57,12 @@ The web application will be containerised by Docker, be composed by `docker-comp
    $ sudo apt-get install docker-ce docker-ce-cli containerd.io
    ```
    
-7. Verify that Docker Engine - Community is installed correctly by running the hello-world image.
+7. Verify that Docker Engine - Community is installed correctly by running the `hello-world` image.
    ```
    $ sudo docker run hello-world
    ```
    
-8. If you would like to use Docker as a non-root user, you should now consider adding your user to the “docker” group with something like:
+8. Add your user to the "docker" group to use Docker as a non-root user.
    ```
    $ sudo usermod -aG docker your-user
    ```
