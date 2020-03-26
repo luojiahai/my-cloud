@@ -102,7 +102,7 @@ The web application will be containerised by Docker, be composed by `docker-comp
    $ docker-compose up -d
    ```
    
-3. Wait at least 5 minutes for the web application to initialise.
+3. Wait at least a minute for the web application to initialise after it has successfully composed.
 
 ## Setup Ghost
 
