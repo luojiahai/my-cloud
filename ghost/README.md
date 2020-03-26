@@ -4,7 +4,7 @@ The web application will be containerised by Docker, be composed by `docker-comp
 
 ## Pre-work
 
-1. Set Type A DNS pointing to your cloud machine public IP for your domain.
+1. Set DNS type A record pointing to your cloud machine public IP for your domain.
 
 2. Add inbound ports 80 (HTTP) and 443 (HTTPS) to the security group of your cloud machine.
 
