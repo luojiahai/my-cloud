@@ -40,7 +40,7 @@
    stable"
    ```
    
-5. Update the apt package index.
+5. Update the ```apt``` package index.
    ```
    $ sudo apt-get update
    ```
