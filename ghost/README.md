@@ -68,7 +68,7 @@
    
    Note: If the command ```docker-compose``` fails after installation, check your path. You can also create a symbolic link to ```/usr/bin``` or any other directory in your path.
       ```
-      sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+      $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
       ```
  
 3. Test the installation.
