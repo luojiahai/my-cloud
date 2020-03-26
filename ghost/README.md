@@ -1,15 +1,15 @@
 # Ghost
 
-The web application will be containerised by Docker, be composed by ```docker-compose``` associating with other essential services (mariadb, nginx-proxy, letsencrypt) and be ready to serve on a cloud machine.
+The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (`mariadb`, `nginx-proxy`, `letsencrypt`) and be ready to serve on a cloud machine.
 
 ## Install Docker Engine - Community (on Ubuntu)
 
-1. Update the ```apt``` package index:
+1. Update the `apt` package index:
    ```
    $ sudo apt-get update
    ```
 
-2. Install packages to allow ```apt``` to use a repository over HTTPS:
+2. Install packages to allow `apt` to use a repository over HTTPS:
    ```
    $ sudo apt-get install \
     apt-transport-https \
@@ -23,7 +23,7 @@ The web application will be containerised by Docker, be composed by ```docker-co
    ```
    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
    ```
-   Verify that you now have the key with the fingerprint ```9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88```, by searching for the last 8 characters of the fingerprint.
+   Verify that you now have the key with the fingerprint `9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88`, by searching for the last 8 characters of the fingerprint.
    ```
    $ sudo apt-key fingerprint 0EBFCD88
    
@@ -41,7 +41,7 @@ The web application will be containerised by Docker, be composed by ```docker-co
    stable"
    ```
    
-5. Update the ```apt``` package index.
+5. Update the `apt` package index.
    ```
    $ sudo apt-get update
    ```
@@ -73,7 +73,7 @@ The web application will be containerised by Docker, be composed by ```docker-co
    $ sudo chmod +x /usr/local/bin/docker-compose
    ```
    
-   Note: If the command ```docker-compose``` fails after installation, check your path. You can also create a symbolic link to ```/usr/bin``` or any other directory in your path.
+   Note: If the command `docker-compose` fails after installation, check your path. You can also create a symbolic link to `/usr/bin` or any other directory in your path.
       ```
       $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
       ```
@@ -84,3 +84,25 @@ The web application will be containerised by Docker, be composed by ```docker-co
    docker-compose version 1.25.4, build 1110ad01
    ```
 
+## Install Ghost
+
+1. Set enviornment variables. 
+   1. Create a file called `.env` in the same directory as `docker-compose.yml`.
+   2. Copy all the content in `example.env` and paste into `.env`.
+   3. Change the values accordingly.
+   4. Save.
+
+2. Run the following Docker Compose command:
+   ```
+   $ docker-compose up -d
+   ```
+   
+3. Wait at least 5 minutes for the web application to initialise.
+
+## Setup Ghost
+
+1. Enter https://{HOST}/ghost in your preferred browser.
+
+2. Follow the instruction to initialise your website.
+
+3. Done! Browse the existing posts for tutorial.
