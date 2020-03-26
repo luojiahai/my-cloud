@@ -2,7 +2,7 @@
 
 The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (database, web server and SSL) and be ready to serve on a cloud machine.
 
-## Pre-work
+## Logistics
 
 1. In your domain service provider, set DNS type A record pointing to the public IP of your cloud machine for your chosen domain.
 
