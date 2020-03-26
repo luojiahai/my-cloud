@@ -2,7 +2,6 @@
 
 ## Install Docker Engine - Community
 
-### 
 1. Update the ```apt``` package index:
    ```
    $ sudo apt-get update
@@ -53,4 +52,27 @@
 7. Verify that Docker Engine - Community is installed correctly by running the hello-world image.
    ```
    $ sudo docker run hello-world
+   ```
+
+## Install Docker Compose (on Linux systems)
+
+1. Run this command to download the current stable release of Docker Compose:
+   ```
+   $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   ```
+   
+2. Apply executable permissions to the binary:
+   ```
+   $ sudo chmod +x /usr/local/bin/docker-compose
+   ```
+   
+   Note: If the command ```docker-compose``` fails after installation, check your path. You can also create a symbolic link to ```/usr/bin``` or any other directory in your path.
+      ```
+      sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+      ```
+ 
+3. Test the installation.
+   ```
+   $ docker-compose --version
+   docker-compose version 1.25.4, build 1110ad01
    ```
