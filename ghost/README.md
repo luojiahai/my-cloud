@@ -87,7 +87,6 @@ The web application will be containerised by Docker, be composed by `docker-comp
 3. Test the installation.
    ```
    $ docker-compose --version
-   docker-compose version 1.25.4, build 1110ad01
    ```
 
 ## Install Ghost
