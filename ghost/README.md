@@ -1,6 +1,6 @@
 # Ghost
 
-## Install Docker Engine - Community
+## Install Docker Engine - Community (on Ubuntu)
 
 1. Update the ```apt``` package index:
    ```
@@ -76,3 +76,4 @@
    $ docker-compose --version
    docker-compose version 1.25.4, build 1110ad01
    ```
+
