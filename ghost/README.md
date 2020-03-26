@@ -2,7 +2,7 @@
 
 The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (database, web server and SSL) and be ready to serve on a cloud machine.
 
-Important note: Please allocate at least 1GB RAM on your cloud machine.
+**Important note: Please allocate at least 1GB RAM on your cloud machine.**
 
 ## Logistics
 
