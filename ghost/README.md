@@ -112,4 +112,6 @@ The web application will be containerised by Docker, be composed by `docker-comp
 
 2. Follow the instruction to initialise your website.
 
-3. Done! Browse the existing posts for tutorial.
+3. Done! 
+
+4. Browse the existing posts for tutorial.
