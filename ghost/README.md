@@ -1,6 +1,6 @@
 # Ghost
 
-Ghost is an open source headless Node.js CMS. The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (database, web server and SSL) and be ready to serve on a cloud machine.
+**Ghost** is an open source headless Node.js CMS, a blogging platform. The web application will be containerised by Docker, be composed by `docker-compose` associating with other essential services (database, web server and SSL) and be ready to serve on an IaaS cloud machine.
 
 **Important note: Please allocate at least 1GB RAM on your cloud machine.**
 
