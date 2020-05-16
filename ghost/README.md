@@ -8,24 +8,9 @@
 
 2. Add inbound ports 80 (HTTP) and 443 (HTTPS) in the security groups.
 
-## Install Docker and ```docker-compose```
+## Installation
 
-Login to the VM and follow steps A, B and C in [here](https://luojiahai.net/install-docker-engine-on-ubuntu/).
-
-## Install Ghost
-
-1. Set enviornment variables. 
-   1. Create a file called `.env` in the same directory as `docker-compose.yml`.
-   2. Copy all the content in `example.env` and paste into `.env`.
-   3. Change the values accordingly.
-   4. Save.
-
-2. Run the following Docker Compose command:
-   ```
-   $ docker-compose up -d
-   ```
-   
-3. Wait at least a minute for the web application to initialise after it has been successfully composed.
+See [here](https://luojiahai.net/hosting-ghost-with-docker/).
 
 ## Setup Ghost
 
