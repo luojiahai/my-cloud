@@ -10,7 +10,7 @@
 
 ## Install Docker and ```docker-compose```
 
-Please follow steps A, B and C in [here](https://luojiahai.net/install-docker-engine-on-ubuntu/).
+Login to the VM and follow steps A, B and C in [here](https://luojiahai.net/install-docker-engine-on-ubuntu/).
 
 ## Install Ghost
 
