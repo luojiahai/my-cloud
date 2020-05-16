@@ -11,13 +11,3 @@
 ## Installation
 
 See [here](https://luojiahai.net/hosting-ghost-with-docker/).
-
-## Setup Ghost
-
-1. Enter https://{HOST}/ghost in your preferred browser.
-
-2. Follow the instruction to initialise your website.
-
-3. Done! 
-
-4. Browse the existing posts for tutorial.
