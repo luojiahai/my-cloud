@@ -48,6 +48,7 @@ services:
       - "80:80"
       - "443:443"
     networks:
+      - proxy
       - ghost
     labels:
       com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: ""
@@ -70,4 +71,7 @@ volumes:
   ghostdata:
 
 networks:
+  proxy:
+    external:
+      name: nginx-proxy
   ghost:
