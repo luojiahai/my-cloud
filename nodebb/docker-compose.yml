@@ -1,0 +1,31 @@
+version: "2"
+
+services:
+  nodebb:
+    image: nilsramsperger/nodebb
+    restart: always
+    ports:
+      - "4567:4567"
+    volumes:
+      - nodebb-data:/var/lib/redis
+      - nodebb-files:/opt/nodebb/public/uploads
+      - nodebb-config:/etc/nodebb
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - VIRTUAL_PORT=4567
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
+    networks:
+      - proxy
+      - nodebb
+
+volumes:
+  nodebb-data:
+  nodebb-files:
+  nodebb-config:
+
+networks:
+  proxy:
+    external:
+      name: nginx-proxy
+  nodebb:
