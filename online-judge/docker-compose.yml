@@ -1,4 +1,5 @@
 version: "3"
+
 services:
 
   oj-redis:
@@ -70,12 +71,11 @@ services:
       - VIRTUAL_PORT=8000
       - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
       - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
+    ports:
+      - "8000:8000"
     networks:
       - proxy
       - oj
-    ports:
-      - "8000:8000"
-      - "1443:1443"
 
 networks:
   proxy:
