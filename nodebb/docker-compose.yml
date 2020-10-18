@@ -1,6 +1,7 @@
 version: "2"
 
 services:
+
   nodebb:
     image: nilsramsperger/nodebb
     restart: always
