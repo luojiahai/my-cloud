@@ -14,7 +14,7 @@ services:
       - RCON_PASSWORD=testing
       - RCON_PORT=28016
       - VIRTUAL_HOST=${VIRTUAL_HOST}
-      - VIRTUAL_PROTO=25565
+      - VIRTUAL_PROTO=http
       - VIRTUAL_PORT=25565
     restart: always
 
